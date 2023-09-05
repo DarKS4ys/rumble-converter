@@ -12,7 +12,7 @@ import {FiExternalLink, FiLoader} from 'react-icons/fi'
 import SocialLink from "./components/SocialLink";
 import Link from "next/link";
 import {SiTiktok} from "react-icons/si"
-import { BsTrash } from "react-icons/bs";
+import { BsMusicNote, BsTrash } from "react-icons/bs";
 import { convertRumbleURLToAPIURL } from "./utils/RumbleParser";
 
 
@@ -173,11 +173,11 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-4 w-full p-2">
                 { quality2160p ? 
-                  <Download definition={'UHD'} downloadUrl={quality2160p} quality={'2160P'}></Download>
+                  <Download definition={'UHD'} downloadUrl={quality2160p} quality={'4K'}></Download>
                 : null}
                 
                 { quality1440p ? 
-                  <Download definition={'UHD'} downloadUrl={quality1440p} quality={'1440P'}></Download>
+                  <Download definition={'UHD'} downloadUrl={quality1440p} quality={'2K'}></Download>
                 : null}
 
                 { quality1080p ? 
@@ -213,9 +213,7 @@ export default function Home() {
         <div className="flex justify-center items-center gap-4">
           <SocialLink link="/ytmp4" icon={AiFillYoutube} iconSize={64}/>
           <SocialLink icon={SiTiktok} iconSize={36} link="/tiktok"/>
-          <SocialLink link="/ytmp3">
-          <Image width={48} height={48} src={YTMusicIcon} alt="Youtube Music Icon"/>
-          </SocialLink>
+          <SocialLink link="/ytmp3" iconSize={36} icon={BsMusicNote}/>
         </div>
       </section>
     </main>
