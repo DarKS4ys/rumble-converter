@@ -211,9 +211,9 @@ export default function Home() {
         ) : null}
           <hr className="border-[--border]"/>
         <div className="flex justify-center items-center gap-4">
-          <SocialLink link="/ytmp4" icon={AiFillYoutube} iconSize={64}/>
-          <SocialLink icon={SiTiktok} iconSize={36} link="/tiktok"/>
-          <SocialLink link="/ytmp3" iconSize={36} icon={BsMusicNote}/>
+          <SocialLink link="https://youtube-converter-six.vercel.app" icon={AiFillYoutube} iconSize={64}/>
+          <SocialLink icon={SiTiktok} iconSize={36} link="https://tiktok-converter.vercel.app"/>
+          <SocialLink link="https://mp3-converter-one.vercel.app" iconSize={36} icon={BsMusicNote}/>
         </div>
       </section>
     </main>
