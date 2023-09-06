@@ -147,9 +147,9 @@ export default function Home() {
         ) : urlResult ? (
           <>
             <div className="md:items-start md:justify-start md:flex-row flex flex-col gap-4 items-center justify-center">
-              <div className="md:w-[32rem] flex flex-col gap-3 w-80">
+              <div className="pt-2 md:w-[32rem] flex flex-col gap-3 w-80">
               <Link className="" target="_blank" href={inputValue || "cantfindvideo"}>
-                  <div className="relative group overflow-hidden h-[18rem] flex w-[32rem] items-center justify-center">
+                  <div className="relative transition hover:ring-offset-4 hover:ring-4 ring-[--border] ring-offset-[--bg] border border-[--border] rounded-lg group overflow-hidden h-[18rem] flex w-[32rem] items-center justify-center">
                       <Image
                         alt="Video Thumbnail"
                         src={thumbnailUrl || placeholderImageUrl}
