@@ -131,12 +131,12 @@ export default function Home() {
           />
           <Button
             className={clsx("!w-36", {
-              "cursor-not-allowed hover:bg-transparent text-[--border] hover:ring-offset-0 hover:ring-0": inputValue === "",
+              "cursor-not-allowed hover:bg-transparent text-[--border] hover:ring-offset-0 hover:ring-0": inputValue === "" || isLoading,
             })}
             type="submit"
             disabled={inputValue === ""}
           >
-            {inputValue === "" ? "Empty" : "Search"}
+            {isLoading ? 'Loading...' : inputValue === "" ? "Empty" : "Search"}
           </Button>
         </form>
 
